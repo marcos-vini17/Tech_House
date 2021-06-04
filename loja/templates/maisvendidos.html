@@ -1,0 +1,156 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/static/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/static/css/theme.css" type="text/css"> 
+  <link rel="stylesheet" href="/static/css/techstore.css" type="text/css"> 
+
+  {% if estilo %}
+    <link rel="stylesheet" href="/static/css/{{estilo}}.css" type="text/css">
+  {% endif %}
+
+  </head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-light bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="#" style="background: white; border-color: red; color: red;">   Tech House  </a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="{{url_for('homepage')}}">  Mais vendidos  <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">  Atendimento ao cliente  </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">  Sobre  </a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0" action="#" method="GET">
+          <input name="busca" class="form-control mr-sm-2" type="text" placeholder="">
+          <button class="btn btn-info my-2 my-sm-0" type="submit">Pesquisar</button>
+        </li>
+        <li class="nav-item">
+          <button class="btn btn-info my-2 my-sm-0" type="submit" style="background: tomato;">Login</button>
+        </li>
+        <li class="nav-item">
+            <button class="btn btn-info my-2 my-sm-0" style="background: blue;" type="submit">Carrinho</button>
+          </li>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="py-5 text-center">
+    <div class="container">
+    </div>
+  </div>
+</div>
+      <h2>Mais vendidos</h2>
+    </div>
+  </div>
+<div class="py-5 text-center bg-primary">
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <img src="/static/img/kindle.png" class="d-block mx-auto img-thumbnail img-fluid my-3 techstore-advertisement--img">
+      <a href="#" class="btn btn-block btn-primary" style="background: blue;" >Comprar</a>
+    </div>
+    <div class="col-md-4">
+      <img src="/static/img/xiaomi.png" class="d-block mx-auto img-thumbnail img-fluid my-3 techstore-advertisement--img">
+      <a href="#" class="btn btn-block btn-primary" style="background: blue;" >Comprar</a>
+    </div>
+    <div class="col-md-4">
+      <img src="/static/img/fire.png" class="d-block mx-auto img-thumbnail img-fluid my-3 techstore-advertisement--img">
+      <a href="#" class="btn btn-block btn-primary" style="background: blue;" >Comprar</a>
+    </div>
+    </div>
+  </div>
+</div>
+<h2>Lançamentos</h2>
+  </div>
+  </div>
+  <div class="py-5 text-center bg-primary">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <img src="/static/img/filmer.png" class="d-block mx-auto img-thumbnail img-fluid my-3 techstore-advertisement--img">
+          <a href="#" class="btn btn-block btn-primary" style="background: blue;" >Comprar</a>
+        </div>
+        <div class="col-md-4">
+          <img src="/static/img/echo.png" class="d-block mx-auto img-thumbnail img-fluid my-3 techstore-advertisement--img">
+          <a href="#" class="btn btn-block btn-primary" style="background: blue;" >Comprar</a>
+        </div>
+        <div class="col-md-4">
+          <img src="/static/img/webcam.png" class="d-block mx-auto img-thumbnail img-fluid my-3 techstore-advertisement--img">
+          <a href="#" class="btn btn-block btn-primary" style="background: blue;" >Comprar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-5 bg-inverse text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h1 class=" pi-item">Tech House</h1>
+            <br> <br> <br>
+            <br> - Quem somos <br>
+            <br> - Serviços <br>
+            <br> - Trabalhe conosco <br>
+            <br> - Atendimento Loja Física <br>
+            <br> - Política de Privacidade <br>
+            <br> - Termos e Condições de Uso <br>
+        </div>
+        <div class="col-md-5">
+          <form action="#" method="POST">
+            <fieldset class="form-group"> <label for="cadastro">Cadastre se para receber nossas noticificações:</label>
+            <fieldset class="form-group"> <label for="nome">Nome:</label>
+              <input type="text" class="form-control" name="nome" id="nome" placeholder="Digite o seu nome"> </fieldset>
+            <fieldset class="form-group"> <label for="email">Email:</label>
+              <input type="email" class="form-control" name="email" id="email" placeholder="Digite o seu mail">
+              </fieldset>
+            </fieldset>
+            <fieldset class="form-group">
+              <button type="submit" class="btn btn-success">Cadastrar</button>
+            </fieldset>
+            <br><br>
+            <div class="text-center"></div>
+          <div class="col-md-6">
+          <h2 class="pi-item"> Dúvidas ou reclamações </h2>
+          <form action="#" method="POST">
+            <fieldset class="form-group"> <label for="email">Email:</label>
+              <input type="email" class="form-control" name="email" id="email" placeholder="Digite o seu mail">
+              </fieldset>
+              <input type="checkbox" 
+                      name="notificar_me" 
+                      value="" checked>Notificar-me</input>
+            <fieldset class="form-group">
+              <input type="radio" name="prof" value="Dúvidas">Dúvidas</input>
+              <input type="radio" name="prof" value="Reclamações">Reclamações</input>
+            </fieldset>
+            <fieldset class="form-group">
+            <label for="mensagem">Mensagem</label>
+              <textarea name="mensagem" cols="50" rows="5">{{message}}</textarea>
+            </fieldset>
+            <fieldset class="form-group">
+            <select name="tipo">
+              {% for tipo in tipos %}
+                <option value="{{tipo.cod}}">{{tipo.info}}</option>
+              {% endfor %}
+            </select>
+            </fieldset>
+            <fieldset class="form-group">
+              <button type="submit" class="btn btn-success">Enviar</button>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="/static/js/jquery-3.1.1.min.js"></script>
+  <script src="/static/js/tether.min.js"></script>
+  <script src="/static/js/bootstrap-4.0.0-alpha.6.min.js"></script>
+</body>
+
+</html>
